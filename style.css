@@ -85,6 +85,13 @@ html {
     -webkit-font-smoothing: antialiased
 }
 
+/* Make all images responsive by default */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 :root {
     cursor: default;
     --color-white: #fff;
@@ -2015,5 +2022,471 @@ footer {
     .landing-page-container {
         height: fit-content;
         margin-top: 100px;  
+    }
+}
+
+/* Enhanced Mobile Responsive Styles */
+
+/* Tablet and below - General improvements */
+@media screen and (max-width: 998px) {
+    /* Better image responsiveness */
+    .dp img {
+        max-width: 100%;
+        height: auto;
+        width: auto;
+    }
+    
+    .image-div img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    /* Better text readability */
+    .about-info p {
+        font-size: 1.6rem;
+        line-height: 1.8;
+        text-align: justify;
+    }
+    
+    /* Better project card spacing */
+    .project-boxes-div {
+        gap: 30px;
+    }
+    
+    /* Better button sizes for touch */
+    .letsTalkBtn {
+        min-height: 50px;
+        padding: 15px 30px;
+    }
+    
+    .cta, .github-redirect {
+        min-height: 44px;
+        padding: 12px 24px;
+    }
+}
+
+/* Mobile - Enhanced styles */
+@media screen and (max-width: 768px) {
+    /* Better spacing */
+    .landing-page-container {
+        padding: 20px 0;
+        min-height: 100vh;
+    }
+    
+    .text-content {
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    /* Better text sizing */
+    #name {
+        font-size: 4.5rem;
+        line-height: 1.2;
+    }
+    
+    #work {
+        font-size: 4rem;
+        line-height: 1.3;
+    }
+    
+    #info-para {
+        font-size: 1.5rem;
+        line-height: 1.7;
+        padding: 0 10px;
+    }
+    
+    /* Better about section */
+    .about-section-container {
+        padding: 50px 0;
+    }
+    
+    .about-info {
+        padding: 0 15px;
+    }
+    
+    .about-info p {
+        font-size: 1.5rem;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+    
+    .dp {
+        padding: 20px;
+    }
+    
+    .dp img {
+        max-width: 280px;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    /* Better skills section */
+    .skills-section-container {
+        padding: 50px 0;
+    }
+    
+    .tech-stack-wrapper {
+        padding: 20px 10px;
+        gap: 25px;
+    }
+    
+    .tech-stack-box {
+        min-height: 80px;
+        padding: 15px;
+    }
+    
+    .tech-stack-logo {
+        max-width: 50px;
+        max-height: 50px;
+    }
+    
+    /* Better projects section */
+    .projects-section-container {
+        padding: 50px 0;
+    }
+    
+    .project-box {
+        margin-bottom: 30px;
+        border-radius: 15px;
+    }
+    
+    .info-div {
+        padding: 25px 20px;
+    }
+    
+    .ProjectHeading {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .ProjectDescription {
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+    
+    .project-buttons {
+        margin-top: 20px;
+        gap: 15px;
+    }
+    
+    /* Better footer */
+    footer {
+        padding: 40px 20px;
+    }
+    
+    .footercontainer {
+        gap: 30px;
+    }
+    
+    .social-media-container {
+        gap: 20px;
+    }
+    
+    .SocialHandle {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 500px) {
+    /* Better header */
+    .navbar {
+        padding: 0 15px;
+    }
+    
+    .hey {
+        font-size: 1.2rem;
+    }
+    
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    /* Better landing section */
+    #hello-friend {
+        font-size: 2.2rem;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    #name {
+        font-size: 3.5rem;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+    
+    #work {
+        font-size: 3rem;
+        line-height: 1.3;
+        margin-bottom: 20px;
+    }
+    
+    #info-para {
+        font-size: 1.3rem;
+        line-height: 1.7;
+        padding: 0;
+    }
+    
+    /* Better buttons */
+    .letsTalkBtn {
+        width: 100%;
+        max-width: 250px;
+        font-size: 1.4rem;
+    }
+    
+    .contact-btn-div {
+        width: 100%;
+        align-items: center;
+    }
+    
+    /* Better about section */
+    .about-section {
+        padding: 30px 15px;
+    }
+    
+    .about-info p {
+        font-size: 1.4rem;
+        line-height: 1.8;
+    }
+    
+    .dp img {
+        max-width: 250px;
+    }
+    
+    /* Better skills */
+    .frontend-dev-heading {
+        font-size: 2.2rem;
+        height: 70px;
+        letter-spacing: 2px;
+    }
+    
+    .tech-stack-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 15px 10px;
+    }
+    
+    .tech-stack-box {
+        aspect-ratio: 1;
+        min-height: 70px;
+        padding: 10px;
+    }
+    
+    .tech-stack-logo {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    
+    /* Better projects */
+    .project-box {
+        height: auto;
+        min-height: 500px;
+    }
+    
+    .info-div {
+        padding: 20px 15px;
+        height: auto;
+    }
+    
+    .ProjectHeading {
+        font-size: 1.8rem;
+    }
+    
+    .ProjectDescription {
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+    
+    .image-div {
+        padding: 0;
+        height: auto;
+    }
+    
+    .image-div img {
+        width: 100%;
+        height: auto;
+        border-radius: 0 0 15px 15px;
+    }
+    
+    .project-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .cta, .github-redirect {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Better footer */
+    .two-words article {
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+    
+    .getintouch-heading article {
+        font-size: 1.6rem;
+    }
+    
+    .footer-bottom article {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 375px) {
+    /* Better text sizing */
+    #name {
+        font-size: 3rem;
+    }
+    
+    #work {
+        font-size: 2.5rem;
+    }
+    
+    #info-para {
+        font-size: 1.2rem;
+    }
+    
+    /* Better about */
+    .about-info p {
+        font-size: 1.3rem;
+    }
+    
+    .dp img {
+        max-width: 200px;
+    }
+    
+    /* Better skills */
+    .frontend-dev-heading {
+        font-size: 1.8rem;
+        height: 60px;
+    }
+    
+    .tech-stack-wrapper {
+        gap: 12px;
+    }
+    
+    .tech-stack-box {
+        min-height: 60px;
+    }
+    
+    /* Better projects */
+    .ProjectHeading {
+        font-size: 1.6rem;
+    }
+    
+    .ProjectDescription {
+        font-size: 1.2rem;
+    }
+    
+    /* Better footer */
+    .two-words article {
+        font-size: 1.5rem;
+    }
+}
+
+/* Very small devices */
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 40%;
+    }
+    
+    .text-content {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    #name {
+        font-size: 2.5rem;
+    }
+    
+    #work {
+        font-size: 2rem;
+    }
+    
+    .about-section,
+    .projects-section-div,
+    .skills-section {
+        width: 90%;
+    }
+    
+    .dp img {
+        max-width: 180px;
+    }
+    
+    .tech-stack-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Landscape orientation on mobile */
+@media screen and (max-width: 998px) and (orientation: landscape) {
+    .landing-page-container {
+        min-height: auto;
+        padding: 50px 0;
+    }
+    
+    .text-content {
+        padding: 20px;
+    }
+    
+    #hello-friend {
+        height: auto;
+        margin-bottom: 5px;
+    }
+    
+    #name {
+        font-size: 3.5rem;
+        margin-bottom: 10px;
+    }
+    
+    #work {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+    
+    #info-para {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+    /* Larger touch targets */
+    .navbar-tabs-ul a,
+    .mobile-navbar-tabs-ul a,
+    .cta,
+    .github-redirect,
+    .letsTalkBtn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* Remove hover effects on touch devices */
+    .dp:hover::after,
+    .dp:hover::before {
+        transform: none;
+    }
+    
+    .logo:hover {
+        transform: none;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .tech-stack-logo,
+    .dp img,
+    .image-div img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
     }
 }
